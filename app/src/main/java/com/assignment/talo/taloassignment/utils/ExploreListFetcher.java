@@ -40,7 +40,7 @@ public class ExploreListFetcher {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                iFetchExploreList.onFailure(error.getMessage());
             }
         });
         queue.add(stringRequest);
