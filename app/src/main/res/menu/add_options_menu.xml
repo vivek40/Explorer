@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ooyala.ges.androidprototype.ui.navigationdrawer.MyRentsActivity">
+    <item
+        android:id="@+id/action_address"
+        android:title="Add Address"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_contact"
+        android:title="Add Contact"
+        app:showAsAction="never" />
+
+</menu>
