@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/margin_medium"
         android:gravity="center_vertical"
         android:visibility="gone" />
 
@@ -21,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/margin_medium"
         android:drawableRight="@drawable/ic_keyboard_arrow_down_orange_a400_24dp"
-        android:text="Relevance"
+        android:text="@string/relevance"
         android:visibility="gone" />
 
     <android.support.v7.widget.RecyclerView
@@ -31,11 +31,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/total_items"
-        android:layout_margin="10dp"
-        android:columnWidth="150dp"
-        android:horizontalSpacing="10dp"
+        android:layout_margin="@dimen/margin_medium"
+        android:columnWidth="@dimen/grid_item_width"
+        android:horizontalSpacing="@dimen/margin_medium"
         android:numColumns="auto_fit"
-        android:verticalSpacing="10dp" />
+        android:verticalSpacing="@dimen/margin_medium" />
 
     <TextView
         android:id="@+id/enable_text"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:padding="20dp"
+        android:padding="@dimen/margin_large"
         android:text="@string/permisssion_enable_text"
         android:visibility="visible" />
 

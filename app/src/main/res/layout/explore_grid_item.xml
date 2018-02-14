@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="@dimen/margin_medium"
     android:background="@drawable/rounded_rect"
     android:orientation="vertical">
 
@@ -11,29 +11,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginLeft="@dimen/margin_xsmall"
+        android:layout_marginRight="@dimen/margin_xsmall"
+        android:layout_marginTop="@dimen/margin_small"
         android:background="@drawable/half_circle_edge"
         android:gravity="center"
-        android:paddingBottom="3dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="3dp"
-        android:textColor="#FFFFFF" />
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_small"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/rating_textview"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/margin_xlarge"
+        android:layout_height="@dimen/margin_xlarge"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="right"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginLeft="@dimen/margin_xsmall"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
         android:gravity="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textStyle="bold" />
 
 
@@ -43,9 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/explore_category"
         android:gravity="center"
-        android:padding="10dp"
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:padding="@dimen/margin_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xlarge"
         android:textStyle="bold" />
 
     <TextView
@@ -55,8 +55,8 @@
         android:layout_below="@+id/explore_name"
         android:gravity="center"
         android:maxLines="1"
-        android:textColor="#000000"
-        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
         android:visibility="gone" />
 
     <TextView
@@ -65,8 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/explore_address"
         android:gravity="center"
-        android:textColor="#000000"
-        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small"
         android:visibility="gone" />
 
     <TextView
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/explore_contact"
         android:gravity="center"
-        android:padding="10dp"
-        android:textColor="#000000" />
+        android:padding="@dimen/margin_medium"
+        android:textColor="@color/black" />
 
 </RelativeLayout>

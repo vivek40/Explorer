@@ -3,13 +3,13 @@
 
 
     <stroke
-        android:width="2dp"
-        android:color="#000000" />
+        android:width="@dimen/double_dp"
+        android:color="@color/black" />
 
     <corners
-        android:bottomLeftRadius="8dp"
-        android:bottomRightRadius="8dp"
-        android:topLeftRadius="8dp"
-        android:topRightRadius="8dp" />
+        android:bottomLeftRadius="@dimen/margin_xxsmall"
+        android:bottomRightRadius="@dimen/margin_xxsmall"
+        android:topLeftRadius="@dimen/margin_xxsmall"
+        android:topRightRadius="@dimen/margin_xxsmall" />
 
 </shape>

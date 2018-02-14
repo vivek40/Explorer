@@ -19,6 +19,7 @@
     <string name="no_contact"> No contact available</string>
     <string name="internet_error"> Please check your internet connection</string>
     <string name="try_again"> Try Again</string>
+    <string name="relevance"> Relevance</string>
 
 
 
@@ -28,6 +29,7 @@
     <string name="currency_accepted"> Currency accepted is :</string>
     <string name="price_range"> Price range is :</string>
     <string name="no_price"> No price details available for this location</string>
+    <string name="navigate">Navigate</string>
 
 
 

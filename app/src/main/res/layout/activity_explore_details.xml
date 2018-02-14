@@ -1,125 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="?android:attr/actionBarSize"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/cancel_action"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_margin="10dp"
-        android:background="@drawable/ic_cancel_red_a700_24dp"
-        android:padding="10dp" />
-
-
-    <TextView
-        android:id="@+id/explore_category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@drawable/half_circle_edge"
-        android:gravity="center"
-        android:padding="10dp"
-        android:textColor="#FFFFFF" />
-
-    <TextView
-        android:id="@+id/name_text"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/explore_category"
-        android:gravity="center"
-        android:padding="10dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:paddingBottom="@dimen/margin_large"
+        android:layout_margin="@dimen/margin_large">
 
-    <TextView
-        android:id="@+id/address_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/name_text"
-        android:layout_margin="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_toLeftOf="@+id/navigate_text"
-        android:gravity="left"
-        android:minLines="3" />
+        <ImageView
+            android:id="@+id/cancel_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@drawable/ic_cancel_red_a700_24dp"
+            android:padding="@dimen/margin_medium" />
 
-    <TextView
-        android:id="@+id/navigate_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/name_text"
-        android:layout_margin="10dp"
-        android:drawableTop="@drawable/ic_place_orange_a400_24dp"
-        android:gravity="center_vertical"
-        android:text="Navigate" />
 
-    <TextView
-        android:id="@+id/contact_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/address_text"
-        android:layout_margin="10dp"
-        android:drawableLeft="@drawable/ic_call_orange_a400_24dp" />
+        <TextView
+            android:id="@+id/explore_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@drawable/half_circle_edge"
+            android:gravity="center"
+            android:padding="@dimen/margin_medium"
+            android:textColor="@color/white" />
 
-    <TextView
-        android:id="@+id/url_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/address_text"
-        android:layout_margin="10dp"
-        android:layout_toRightOf="@+id/contact_text"
-        android:gravity="right" />
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/explore_category"
+            android:gravity="center"
+            android:padding="@dimen/margin_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_xxlarge"
+            android:textStyle="bold" />
 
-    <android.support.v7.widget.AppCompatRatingBar
-        android:id="@+id/rating_bar"
-        style="?android:attr/ratingBarStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/url_text"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:numStars="10" />
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_text"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_toLeftOf="@+id/navigate_text"
+            android:gravity="left"
+            android:minLines="3" />
 
-    <TextView
-        android:id="@+id/rating_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/url_text"
-        android:layout_margin="10dp"
-        android:layout_toRightOf="@+id/rating_bar" />
+        <TextView
+            android:id="@+id/navigate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/name_text"
+            android:layout_margin="@dimen/margin_medium"
+            android:drawableTop="@drawable/ic_place_orange_a400_24dp"
+            android:gravity="center_vertical"
+            android:text="@string/navigate" />
 
-    <View
-        android:id="@+id/line1"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@+id/rating_text"
-        android:layout_margin="10dp"
-        android:background="@color/colorPrimaryDark" />
+        <TextView
+            android:id="@+id/contact_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/address_text"
+            android:layout_margin="@dimen/margin_medium"
+            android:drawableLeft="@drawable/ic_call_orange_a400_24dp" />
 
-    <TextView
-        android:id="@+id/opening_hours"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/line1"
-        android:layout_margin="10dp"
-        android:gravity="center" />
+        <TextView
+            android:id="@+id/url_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/address_text"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@+id/contact_text"
+            android:gravity="right" />
 
-    <TextView
-        android:id="@+id/price_details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/opening_hours"
-        android:layout_margin="10dp"
-        android:gravity="center" />
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/url_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_medium"
+            android:numStars="10" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/rating_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/url_text"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_toRightOf="@+id/rating_bar" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/single_dp"
+            android:layout_below="@+id/rating_text"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/opening_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            android:layout_margin="@dimen/margin_medium"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/price_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/opening_hours"
+            android:layout_margin="@dimen/margin_medium"
+            android:gravity="center" />
+
+    </RelativeLayout>
+</ScrollView>
